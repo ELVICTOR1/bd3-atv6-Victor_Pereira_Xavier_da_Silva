@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bd3-atv6-victor-fernandes</title>
+  </head>
+  <body>
+    <div id="app">
+      <section id="containerForm">
+        <h1>Cadastro de Alunos</h1>
+        <h3>Campos com a borda vermelha indicam campos obrigatórios</h3>
+
+        <form id="addAlunoForm" onsubmit="addAlunoApi(event)">
+          <input
+            name="nome"
+            type="text"
+            id="nome"
+            placeholder="Nome"
+            required
+          />
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            name="cpf"
+            type="text"
+            id="cpf"
+            placeholder="CPF do aluno"
+            required
+          />
+          <input
+            name="rg"
+            type="text"
+            id="rg"
+            placeholder="RG do aluno"
+            required
+          />
+          <input
+            name="telefoneResponsavel"
+            type="tel"
+            id="telefoneResponsavel"
+            placeholder="Telefone do responsável"
+            required
+          />
+          <input
+            name="telefoneAluno"
+            type="tel"
+            id="telefoneAluno"
+            placeholder="Telefone do aluno"
+          />
+          <input
+            name="dataNascimento"
+            type="date"
+            id="dataNascimento"
+            required
+          />
+
+          <button>Cadastrar</button>
+        </form>
+      </section>
+
+      <section id="containerLista">
+        <h2>Lista de Alunos</h2>
+
+        <div id="lista"></div>
+      </section>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
